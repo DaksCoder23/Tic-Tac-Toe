@@ -1,0 +1,61 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border: 2px solid #333;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .square:disabled {
+    cursor: not-allowed;
+  }
+  
+  .status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .reset-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .reset-button:hover {
+    background-color: #45a049;
+  }
